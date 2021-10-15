@@ -1,7 +1,9 @@
-
 // How to use this function?
 // Morse(code type,text);
 // This code will return a morse value
+
+console.log(Morse('Encode','i love you'));
+console.log(Morse('Decode','.. ~ .-.. --- ...- . ~ -.-- --- ..-'));
 
 function Morse(code_type,text){
     if(code_type !== 'Encode' && code_type !== 'Decode') return 'Invalid code type'
@@ -91,7 +93,7 @@ function Morse(code_type,text){
     }else if
     (code_type==='Decode'){
         var deCArr = []
-        for (i=0;i<text.length; i++){
+        while(text.includes(' ')){
             var getOf = text.indexOf(' ')
             deCArr.push(text.substring(0,getOf))
             text = text.slice(getOf+1)
