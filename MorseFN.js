@@ -175,10 +175,11 @@ function Morse(code_type,text){
                 getpush(' ')
             }
         }
+        console.log(deCArr)
         return getCode
     }
-    function getpush(mCode){
-        if(mCode==='.' || mCode==='-' || mCode==='~'){
+    function getpush(mCode){ 
+        if(mCode.includes('.')===true || mCode.includes('-')===true || mCode.includes('~')===true){
             getCode=getCode+mCode+' ';
         }else{
             getCode=getCode+mCode;
