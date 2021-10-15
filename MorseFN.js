@@ -175,7 +175,6 @@ function Morse(code_type,text){
                 getpush(' ')
             }
         }
-        console.log(deCArr)
         return getCode
     }
     function getpush(mCode){ 
